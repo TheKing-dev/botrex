@@ -3,7 +3,7 @@
 # Merhaba 👋 Maze Development
 Sizlere **aoi.js** ile geliştirilmiş bir **Boş Altyapı** hazırladık. Kullanımı çok basit ve sadedir. Bu altyapı tamamen **Maze Development** tarafından hazırlanmıştır ve herhangi bir yerde paylaşılması ve yayılması yasaktır. Altyapıyla alakalı sorun yaşarsanız, yeni şeyler eklemek veya şikayette bulunmak isterseniz bizimle iletişime geçiniz.
 
-🎉 **Özel Teşekkürler**
+🎉 **Özel Teşekkürler**d
 
 **[Ardawn](https://github.com/ardawn9)**
 
