@@ -1,3 +1,8 @@
 module.exports = {
-Prefix: ".",
+Prefix: "B!",
+chatgptmsg: "",
+blackaimsg: "",
+cevirimsg: "",
+resimmsg: "",
+resim8kmsg: "",
 }

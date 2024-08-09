@@ -12,13 +12,13 @@ Util.parsers.ErrorHandler = parse;
 Util.parsers.FileParser = (data) => {
   return createAst(data).children.map(parseFiles);
 }
-
+require('http').createServer((_req, res) => res.end()).listen(8080);
 Util.parsers.OptionsParser = (data) => {
   return createAst(data).children.map(parseExtraOptions);
 }
 
 const bot = new aoijs.AoiClient({
-  token: "TOKEN BURAYA",
+  token: process.env['bottoken'],
   prefix: ["$getGuildVar[Prefix]", "$getGuildVar[Prefix] ", "<@!$clientID>", "<@$clientID> "],
   intents: ["MessageContent", "Guilds", "GuildMessages", "GuildMembers", "GuildBans", "GuildEmojisAndStickers", "GuildIntegrations", "GuildWebhooks", "GuildInvites", "GuildVoiceStates", "GuildPresences", "GuildMessageReactions", "GuildMessageTyping", "DirectMessages", "DirectMessageReactions", "DirectMessageTyping"],
   events: ["onMessage", "onMessageDelete", "onMessageUpdate", "onMessageDeleteBulk", "onReactionAdd", "onReactionRemove", "onReactionRemoveAll", "onInviteCreate", "onInviteDelete", "onGuildJoin", "onGuildLeave", "onGuildUpdate", "onGuildUnavailable", "onRoleCreate", "onRoleUpdate", "onRoleDelete", "onChannelCreate", "onChannelUpdate", "onChannelDelete", "onChannelPinsUpdate", "onStageInstanceCreate", "onStageInstanceUpdate", "onStageInstanceDelete", "onThreadCreate", "onThreadUpdate", "onThreadDelete", "onThreadListSync", "onThreadMemberUpdate", "onThreadMembersUpdate", "onEmojiCreate", "onEmojiDelete", "onEmojiUpdate", "onStickerCreate", "onStickerDelete", "onStickerUpdate", "onBanAdd", "onBanRemove", "onVoiceStateUpdate", "onJoin", "onLeave", "onMemberUpdate", "onMemberAvailable", "onMembersChunk", "onPresenceUpdate", "onTypingStart", "onUserUpdate", "onInteractionCreate", "onFunctionError", "onApplicationCommandPermissionsUpdate", "onVariableCreate", "onVariableDelete", "onVariableUpdate"],
@@ -35,12 +35,12 @@ const bot = new aoijs.AoiClient({
 
 const { Client, GatewayIntentBits } = require('discord.js');
 const client = new Client({ intents: [] });
-client.login("TOKEN BURAYA")
+client.login(process.env['bottoken'])
 
 bot.status({
-  name: "Maze Development | Boş Altyapı",
+  name: "Botrex | Beta",
   type: "STREAMING",
-  url: "https://www.twitch.tv/ardawn9",
+  url: "https://www.twitch.tv/",
   time: "12",
 });
 

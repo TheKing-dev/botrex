@@ -2,6 +2,6 @@ module.exports = {
 name: "eval",
 code: `
 $eval[$message]
-$onlyForIDs[KENDI ID'NIZ BURAYA;Sahibim değilsin.]
+$onlyForIDs[868048718794993674;Sahibim değilsin.]
 `
 }
